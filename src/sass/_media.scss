@@ -43,4 +43,21 @@
 	.nav-mobile {
 		display: none;
 	}
+
+	.header {
+		background-position: 30% 40%;
+
+		&__container {
+			&-text {
+				display: block;
+				margin-top: 1em;
+				width: 50%;
+				text-align: center;
+				font-weight: 200;
+				font-size: 2.1rem;
+				line-height: 1.7em;
+				color: $creme-white;
+			}
+		}
+	}
 }
