@@ -17,20 +17,29 @@
 <body>
     <nav class="nav">
         <div class="wrapper">
-            <div class="company-logo">
-                <div class="company-logo__name">
-                    <p class="company-logo__name-upper">Salon fryzjerski</p>
-                    <p class="company-logo__name-lower">Żaneta</p>
+            <div class="navbar">
+                <div class="company-logo">
+                    <div class="company-logo__name">
+                        <p class="company-logo__name-upper">Salon fryzjerski</p>
+                        <p class="company-logo__name-lower">Żaneta</p>
+                    </div>
+                    <div class="company-logo__icon">
+                        <img src="dist/img/logo-icon.svg" alt="Logo firmy">
+                    </div>
                 </div>
-                <div class="company-logo__icon">
-                    <img src="dist/img/logo-icon.svg" alt="Logo firmy">
-                </div>
+                <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <ul class="navbar__items">
+                    <li class="navbar__item">Home</li>
+                    <li class="navbar__item">O nas</li>
+                    <li class="navbar__item">Nasze prace</li>
+                    <li class="navbar__item">Cennik</li>
+                    <li class="navbar__item">Kontakt</li>
+                </ul>
             </div>
-            <button class="hamburger hamburger--spin" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
         </div>
     </nav>
     <script src="dist/js/script.min.js"></script>
