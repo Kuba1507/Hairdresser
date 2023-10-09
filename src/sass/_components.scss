@@ -13,7 +13,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	background-color: antiquewhite;
+	background-color: $pure-white;
 	z-index: 1000;
 
 	&__items {
@@ -66,10 +66,11 @@
 	position: fixed;
 	margin-top: 80px;
 	width: 100%;
+	z-index: 20;
 
 	&__items {
 		position: relative;
-		background-color: rgb(233, 233, 183);
+		background-color: $pure-white;
 		transform: translateY(-400px);
 		transition: transform 0.7s;
 		z-index: 1;
@@ -78,14 +79,84 @@
 	&__item {
 		padding: 1em;
 		font-family: "Open Sans", sans-serif;
-		border-top: 1px solid rgb(218, 218, 218);
-	}
-
-	&__item:first-child {
-		border-top: none;
+		border-top: 1px solid rgb(127, 127, 127);
 	}
 
 	.show-nav {
 		transform: translateY(0);
+	}
+}
+
+//header
+
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100dvh;
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("../img/header-img.jpg");
+	background-position: 30% 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: grayscale(1);
+
+	&__title {
+		padding: 0 1em;
+		font-family: "Raleway", sans-serif;
+		text-align: center;
+		letter-spacing: 2px;
+		font-weight: 200;
+		color: $pure-white;
+	}
+
+	&__underline {
+		margin-top: 1em;
+		height: 1px;
+		width: 60%;
+		background-color: $pure-white;
+	}
+
+	&__button {
+		position: absolute;
+		bottom: 2.5em;
+		padding: 1.5em 1em;
+		border-radius: 8px;
+		text-decoration: none;
+		background-color: rgba(255, 255, 255, 0.1);
+		border: 2px solid rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(30px);
+		color: $pure-white;
+		font-family: "Raleway", sans-serif;
+		// font-size: 0.9rem;
+		letter-spacing: 2px;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+
+	// &__button {
+	// 	position: absolute;
+	// 	bottom: 4em;
+	// 	padding: 1em 2em;
+	// 	font-family: "Open Sans", sans-serif;
+	// 	font-size: 0.9rem;
+	// 	font-weight: 200;
+	// 	background: none;
+	// 	border: 1px solid $pure-white;
+	// 	color: $pure-white;
+	// 	cursor: pointer;
+	// }
+
+	&__shadow {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.65);
+		z-index: -5;
 	}
 }
