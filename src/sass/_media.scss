@@ -1,0 +1,46 @@
+@use 'colors' as *;
+
+@media (min-width: 768px) {
+	.nav-mobile {
+		&__item {
+			padding: 1.25em;
+		}
+	}
+
+	.header {
+		&__container {
+			&-title {
+				padding: 0 2em;
+				font-size: 5rem;
+				letter-spacing: 3px;
+			}
+
+			&-button {
+				bottom: 3em;
+				padding: 1.5em;
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.nav-desktop {
+		&__items {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+		}
+
+		.navbar {
+			.hamburger {
+				display: none;
+			}
+		}
+	}
+
+	.nav-mobile {
+		display: none;
+	}
+}
