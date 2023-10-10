@@ -1,4 +1,4 @@
-@use 'colors' as *;
+@use "colors" as *;
 
 @media (min-width: 768px) {
 	.nav-mobile {
@@ -19,6 +19,32 @@
 				bottom: 3em;
 				padding: 1.5em;
 				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.main {
+		.section-heading {
+			font-size: 2.8rem;
+		}
+
+		.subsection-heading {
+			font-size: 2.2rem;
+		}
+
+		.about-us {
+			&__description {
+				font-size: 2rem;
+			}
+
+			.treatments-box {
+				&-title {
+					font-size: 4rem;
+				}
+
+				&-description {
+					font-size: 2.2rem;
+				}
 			}
 		}
 	}
@@ -57,6 +83,45 @@
 				font-size: 2.1rem;
 				line-height: 1.7em;
 				color: $creme-white;
+			}
+		}
+	}
+
+	.main {
+		.section-heading {
+			font-size: 2.8rem;
+		}
+
+		.subsection-heading {
+			font-size: 2.2rem;
+		}
+
+		.about-us {
+			margin-top: -8em;
+
+			&__description {
+				font-size: 2rem;
+			}
+
+			.treatments-box {
+				flex-direction: row;
+				margin-top: 8em;
+				padding: 0;
+
+				&-title {
+					font-size: 3.8rem;
+				}
+
+				&-description {
+					font-size: 2rem;
+				}
+
+				&__haircut,
+				&__coloring,
+				&__care {
+					margin: 0;
+					padding: 0;
+				}
 			}
 		}
 	}
