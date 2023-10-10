@@ -252,7 +252,7 @@
 			justify-content: center;
 			align-items: center;
 			background-color: #e6e5e5;
-			margin: 1.5em 0;
+			margin: 1.5em 0 4em 0;
 			padding: 2em 1.5em;
 
 			&-title {
@@ -327,6 +327,32 @@
 				height: 1px;
 				width: 20%;
 				background-color: $creme-white;
+			}
+		}
+
+		.advantages-box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: nowrap;
+			padding: 2em;
+
+			&__card {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				font-size: 1.6rem;
+				font-weight: 200;
+				padding: 2em;
+
+				img {
+					margin-bottom: 0.5em;
+					width: 55px;
+					height: 55px;
+				}
 			}
 		}
 	}
