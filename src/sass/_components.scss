@@ -230,19 +230,92 @@
 		}
 	}
 
-	.about-us {
-		&__heading {
-			margin-top: 1.5em;
-			font-size: 1.8rem;
-			text-align: center;
-			font-weight: bold;
-		}
+	.subsection-heading {
+		margin-top: 1.5em;
+		font-size: 1.8rem;
+		letter-spacing: 1px;
+		text-align: center;
+		font-weight: bold;
+	}
 
+	.about-us {
 		&__description {
 			padding: 1em 2em;
 			line-height: 1.6em;
 			font-weight: 200;
 			text-align: justify;
+		}
+
+		.treatments-box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 1em 0;
+			padding: 2.5em 1.5em;
+			background-color: #e6e5e5;
+
+			&-title {
+				margin: 0.5em 0;
+				font-family: "Raleway", sans-serif;
+				font-size: 3.2rem;
+				font-weight: 400;
+				color: $creme-white;
+				text-transform: uppercase;
+			}
+
+			&-description {
+				color: $creme-white;
+				font-size: 2rem;
+				font-weight: 200;
+				text-transform: uppercase;
+				text-align: center;
+			}
+
+			&__haircut,
+			&__coloring,
+			&__care {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				min-height: 420px;
+				padding: 0.5em;
+				margin: 1em 0;
+				width: 100%;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				filter: grayscale(1);
+
+				img {
+					width: 80px;
+					height: 80px;
+				}
+			}
+
+			&__haircut {
+				background-image: url("../img/haircut.jpg");
+			}
+
+			&__coloring {
+				background-image: url("../img/coloring.jpg");
+			}
+
+			&__care {
+				background-image: url("../img/care.jpg");
+			}
+
+			.shadow {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 0.45);
+				z-index: -5;
+			}
 		}
 	}
 }

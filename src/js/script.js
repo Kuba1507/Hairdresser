@@ -1,4 +1,5 @@
 const mobileNav = document.querySelector(".nav-mobile__items");
+const navbar = document.querySelector(".nav-desktop");
 const burgerBtn = document.querySelector(".hamburger");
 
 const addTypingEffect = () => {
