@@ -136,5 +136,13 @@
 				}
 			}
 		}
+
+		.gallery {
+			.img-gallery {
+				.delete-filter {
+					filter: grayscale(1);
+				}
+			}
+		}
 	}
 }
