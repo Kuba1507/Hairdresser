@@ -32,7 +32,9 @@ const closeNav = () => {
 	burgerBtn.classList.remove("is-active");
 };
 
-const openFullImage = () => {
+const openFullImage = (e) => {
+	const clickedImageSrc = e.target.getAttribute("src");
+	changingImg.setAttribute("src", clickedImageSrc);
 	fullImg.style.display = "flex";
 };
 
