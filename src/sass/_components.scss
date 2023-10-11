@@ -476,11 +476,11 @@
 			padding: 1em 0.5em;
 			width: 100%;
 			background-color: $pure-white;
-			opacity: 0.65;
+			opacity: 0.75;
 			z-index: 150;
 
 			&__heading {
-				margin: 0.75em 0;
+				margin-top: 0.75em;
 				font-family: "Raleway", sans-serif;
 				font-size: 2.4rem;
 				font-weight: 400;
@@ -491,7 +491,14 @@
 				flex-direction: column;
 				align-items: center;
 				justify-content: space-between;
-				margin: 1em 0.5em 0 0.5em;
+				margin-bottom: 1em;
+
+				&-underline {
+					margin: 0.5em 0;
+					background-color: $dark;
+					height: 1px;
+					width: 40%;
+				}
 
 				&-service {
 					display: flex;
@@ -519,6 +526,7 @@
 				}
 
 				&-title {
+					margin-top: 2em;
 					font-size: 2rem;
 					letter-spacing: 2px;
 					font-weight: 200;
