@@ -1,5 +1,5 @@
-@use "colors" as *;
-@use "animations" as *;
+@use 'colors' as *;
+@use 'animations' as *;
 
 .wrapper {
 	margin: 0 auto;
@@ -53,7 +53,7 @@
 				padding: 1em;
 
 				&__name {
-					font-family: "Open Sans", sans-serif;
+					font-family: 'Open Sans', sans-serif;
 					text-align: center;
 					transition: color 0.3s;
 
@@ -115,7 +115,7 @@
 
 	&__item {
 		padding: 1em;
-		font-family: "Open Sans", sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		border-top: 1px solid rgb(127, 127, 127);
 	}
 
@@ -131,10 +131,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 100dvh;
 	min-height: 100vh;
+	min-height: 100dvh;
+	min-height: 100svh;
 	width: 100%;
-	background-image: url("../img/header-img.jpg");
+	background-image: url('../img/header-img.jpg');
 	background-position: 30% 70%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -148,7 +149,7 @@
 
 		&-title {
 			padding: 0 1em;
-			font-family: "Raleway", sans-serif;
+			font-family: 'Raleway', sans-serif;
 			text-align: center;
 			letter-spacing: 2px;
 			font-weight: 200;
@@ -181,7 +182,7 @@
 			border: 2px solid rgba(255, 255, 255, 0.1);
 			backdrop-filter: blur(25px);
 			color: $pure-white;
-			font-family: "Raleway", sans-serif;
+			font-family: 'Raleway', sans-serif;
 			letter-spacing: 2px;
 			cursor: pointer;
 			text-transform: uppercase;
@@ -222,7 +223,7 @@
 		font-size: 2.5rem;
 		font-weight: 400;
 		letter-spacing: 1px;
-		font-family: "Raleway", sans-serif;
+		font-family: 'Raleway', sans-serif;
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
 		grid-template-rows: 16px 0;
@@ -230,7 +231,7 @@
 
 		&:after,
 		&:before {
-			content: "";
+			content: '';
 			display: block;
 			border-bottom: 2px solid #ccc;
 			background-color: #f0f0f0;
@@ -264,7 +265,7 @@
 
 			&-title {
 				margin: 0.5em 0;
-				font-family: "Raleway", sans-serif;
+				font-family: 'Raleway', sans-serif;
 				font-size: 3.2rem;
 				font-weight: 400;
 				color: $creme-white;
@@ -308,15 +309,15 @@
 			}
 
 			&__haircut {
-				background-image: url("../img/haircut.jpg");
+				background-image: url('../img/haircut.jpg');
 			}
 
 			&__coloring {
-				background-image: url("../img/coloring.jpg");
+				background-image: url('../img/coloring.jpg');
 			}
 
 			&__care {
-				background-image: url("../img/care.jpg");
+				background-image: url('../img/care.jpg');
 			}
 
 			.shadow {
@@ -461,7 +462,7 @@
 		justify-content: center;
 		align-items: center;
 		margin: 3em 0;
-		background-image: url("../img/price-list-bg-small.jpg");
+		background-image: url('../img/price-list-bg-small.jpg');
 		background-attachment: fixed;
 		background-size: cover;
 		background-position: center;
@@ -482,7 +483,7 @@
 
 			&__heading {
 				margin-top: 0.75em;
-				font-family: "Raleway", sans-serif;
+				font-family: 'Raleway', sans-serif;
 				font-size: 2.4rem;
 				font-weight: 400;
 			}
@@ -512,7 +513,7 @@
 					&-price {
 						margin-top: 1em;
 						font-size: 1.4rem;
-						font-family: "Open Sans", sans-serif;
+						font-family: 'Open Sans', sans-serif;
 						font-weight: 400;
 						text-transform: uppercase;
 					}
