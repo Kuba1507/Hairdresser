@@ -143,6 +143,10 @@
 					filter: grayscale(1);
 				}
 			}
+
+			.bg-icon, .bg-icon2 {
+				display: block;
+			}
 		}
 	}
 }

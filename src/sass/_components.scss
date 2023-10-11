@@ -1,4 +1,5 @@
 @use "colors" as *;
+@use "animations" as *;
 
 .wrapper {
 	margin: 0 auto;
@@ -370,6 +371,7 @@
 	.gallery {
 		position: relative;
 		margin-top: 3em;
+		overflow: hidden;
 
 		.img-gallery {
 			display: grid;
@@ -427,6 +429,30 @@
 		.full-img img {
 			width: 90%;
 			max-width: 500px;
+		}
+
+		.bg-icon,
+		.bg-icon2 {
+			position: absolute;
+			display: none;
+			opacity: 0.05;
+			z-index: -5;
+		}
+
+		.bg-icon {
+			top: 3.5em;
+			left: 1em;
+			width: 550px;
+			height: 550px;
+			animation: 60s linear infinite rotateIconLeft;
+		}
+
+		.bg-icon2 {
+			bottom: 3em;
+			right: 2em;
+			width: 400px;
+			height: 400px;
+			animation: 60s linear infinite rotateIconRight;
 		}
 	}
 }
