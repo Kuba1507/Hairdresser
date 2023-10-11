@@ -106,6 +106,11 @@
 		z-index: 1;
 	}
 
+	&-link {
+		text-decoration: none;
+		color: $black;
+	}
+
 	&__item {
 		padding: 1em;
 		font-family: "Open Sans", sans-serif;
@@ -347,6 +352,11 @@
 				font-size: 1.6rem;
 				font-weight: 200;
 				padding: 2em;
+				transition: transform 0.4s;
+
+				&:hover {
+					transform: scale(1.1);
+				}
 
 				img {
 					margin-bottom: 0.5em;

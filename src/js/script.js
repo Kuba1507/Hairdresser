@@ -23,5 +23,11 @@ const handleNav = () => {
 	burgerBtn.classList.toggle("is-active");
 };
 
+const closeNav = () => {
+	mobileNav.classList.remove("show-nav");
+	burgerBtn.classList.remove("is-active");
+};
+
 burgerBtn.addEventListener("click", handleNav);
+mobileNav.addEventListener("click", closeNav);
 document.addEventListener("DOMContentLoaded", addTypingEffect);
