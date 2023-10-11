@@ -1,6 +1,10 @@
 const mobileNav = document.querySelector(".nav-mobile__items");
 const navbar = document.querySelector(".nav-desktop");
 const burgerBtn = document.querySelector(".hamburger");
+const galleryImages = document.querySelectorAll(".gallery-img");
+const fullImg = document.querySelector(".full-img");
+const changingImg = document.querySelector(".changing-img");
+const closeFullImgButton = document.querySelector(".closing-x");
 
 const addTypingEffect = () => {
 	const screenWidth = window.innerWidth;
@@ -28,6 +32,18 @@ const closeNav = () => {
 	burgerBtn.classList.remove("is-active");
 };
 
+const openFullImage = () => {
+	fullImg.style.display = "flex";
+};
+
+const closeFullImage = () => {
+	fullImg.style.display = "none";
+};
+
+document.addEventListener("DOMContentLoaded", addTypingEffect);
 burgerBtn.addEventListener("click", handleNav);
 mobileNav.addEventListener("click", closeNav);
-document.addEventListener("DOMContentLoaded", addTypingEffect);
+galleryImages.forEach((image) => {
+	image.addEventListener("click", openFullImage);
+});
+closeFullImgButton.addEventListener("click", closeFullImage);
