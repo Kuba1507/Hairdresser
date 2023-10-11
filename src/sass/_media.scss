@@ -82,6 +82,12 @@
 				}
 			}
 		}
+
+		.contact {
+			&__box {
+				flex-direction: row;
+			}
+		}
 	}
 }
 
