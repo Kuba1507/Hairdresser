@@ -52,9 +52,37 @@
 				flex-wrap: wrap;
 			}
 		}
-	}
 
-	
+		.price-list {
+			background-image: url("../img/price-list-bg-large.jpg");
+
+			.price-box {
+				margin: auto;
+				max-width: 600px;
+
+				&__heading {
+					font-size: 2.6rem;
+				}
+
+				&__section {
+					flex-direction: row;
+					align-items: flex-start;
+
+					.female-box,
+					.male-box {
+						margin: 0 2em;
+					}
+
+					&-service {
+						&-name,
+						&-price {
+							font-size: 1.6rem;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -146,8 +174,27 @@
 				}
 			}
 
-			.bg-icon, .bg-icon2 {
+			.bg-icon,
+			.bg-icon2 {
 				display: block;
+			}
+		}
+
+		.price-list {
+			.price-box {
+				margin: auto;
+				max-width: 900px;
+				padding: 2em;
+
+				&__section {
+					flex-direction: row;
+					align-items: flex-start;
+
+					.female-box,
+					.male-box {
+						margin: 0 2.5em;
+					}
+				}
 			}
 		}
 	}

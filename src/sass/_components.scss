@@ -457,10 +457,10 @@
 	}
 
 	.price-list {
-		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: 3em;
 		background-image: url("../img/price-list-bg-small.jpg");
 		background-attachment: fixed;
 		background-size: cover;
@@ -469,6 +469,7 @@
 		filter: grayscale(1);
 
 		.price-box {
+			position: relative;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -492,12 +493,13 @@
 				align-items: center;
 				justify-content: space-between;
 				margin-bottom: 1em;
+				padding: 0.5em;
 
 				&-underline {
 					margin: 0.5em 0;
 					background-color: $dark;
 					height: 1px;
-					width: 40%;
+					width: 100%;
 				}
 
 				&-service {
@@ -509,9 +511,10 @@
 					&-name,
 					&-price {
 						margin-top: 1em;
-						text-transform: uppercase;
+						font-size: 1.4rem;
 						font-family: "Open Sans", sans-serif;
 						font-weight: 400;
+						text-transform: uppercase;
 					}
 
 					&-name {
