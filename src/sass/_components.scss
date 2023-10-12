@@ -588,7 +588,7 @@
 	display: flex;
 	flex-direction: column;
 	margin-top: 4em;
-	padding: 1.5em;
+	padding-top: 1em;
 	background: rgb(100, 100, 100);
 	background: linear-gradient(
 		56deg,
@@ -599,6 +599,9 @@
 
 	&__desktop {
 		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		padding: 0 5em;
 		width: 100%;
 
@@ -649,5 +652,15 @@
 		color: $pure-white;
 		text-align: center;
 		font-weight: 200;
+
+		.socials {
+			img {
+				margin: 1em 1.5em;
+				width: 35px;
+				height: 35px;
+				
+				cursor: pointer;
+			}
+		}
 	}
 }

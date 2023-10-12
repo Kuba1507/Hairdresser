@@ -204,4 +204,16 @@
 			}
 		}
 	}
+
+	.footer {
+		padding: 1.5em;
+
+		&__mobile {
+			display: none;
+		}
+
+		&__desktop {
+			display: flex;
+		}
+	}
 }
