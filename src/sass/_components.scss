@@ -586,14 +586,19 @@
 
 .footer {
 	display: flex;
+	flex-direction: column;
 	margin-top: 4em;
-	padding: 2em;
-	background-color: $dark;
-	border-top-left-radius: 50px;
-	border-top-right-radius: 50px;
+	padding: 1.5em;
+	background: rgb(100, 100, 100);
+	background: linear-gradient(
+		56deg,
+		rgba(100, 100, 100, 1) 0%,
+		rgba(68, 68, 68, 1) 28%,
+		rgba(32, 32, 32, 1) 88%
+	);
 
 	&__desktop {
-		display: flex;
+		display: none;
 		padding: 0 5em;
 		width: 100%;
 
@@ -622,12 +627,27 @@
 
 			.socials {
 				img {
-					margin-left: 2em;
+					margin-left: 3em;
 					width: 40px;
 					height: 40px;
+					border-radius: 50%;
+					transition: all 0.5s;
 					cursor: pointer;
+				}
+
+				img:hover {
+					padding: 0.35em;
+					background-color: $creme-white;
+					transform: scale(1.2);
 				}
 			}
 		}
+	}
+
+	&__mobile {
+		font-family: "Raleway", sans-serif;
+		color: $pure-white;
+		text-align: center;
+		font-weight: 200;
 	}
 }
